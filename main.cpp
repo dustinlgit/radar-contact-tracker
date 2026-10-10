@@ -5,10 +5,13 @@
 
 
 int main() {
+    // target init position and its velocity
     double x = -150.0, y = 50.0;
-    double vx = 20.0, vy = 0.0;      // moves right 20 units per sweep
-    const double radarRange = 100.0; // radar sits at (0, 0)
+    double vx = 20.0, vy = 0.0;   
 
+    const double radarRange = 100.0; 
+
+    // find the distance of the moving target within 15 sweeps and print out all info related
     std::cout << std::setw(6)  << "Sweep"    << " |"
               << std::setw(8)  << "x"        << " |"
               << std::setw(8)  << "y"        << " |"
